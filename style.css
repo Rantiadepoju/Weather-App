@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-weight: 600;
+}
+body {
+    background: url("./cloud.jpg");
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    background: rgb(0, 0%, 0%, 0.15);
+    backdrop-filter: blur(15px);
+}
+.regular-txt {
+    font-weight: 600;
+}
+.main-container {
+    position: relative;
+    border: solid;
+    height: 500px;
+    width: 300px;
+    z-index: 1;
+    background: linear-gradient(
+        to top, rgb(0, 0, 0, 0.15)
+        rgb(255, 255, 255, 0.15));
+    border-radius: 11px;
+    backdrop-filter: blur(100px);
+    padding: 20px;
+}
+.app-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.input-container {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.cityInput {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 99px;
+    border: 3px solid transparent;
+    background: skyblue;
+    color: #17324d;
+    outline: none;
+    font-weight: 500;
+    transition: 0.25s border;
+    padding-right: 56px;
+}
+.cityInput:focus {
+    border: 3px solid rgb(0, 0%, 0%, 0.15);
+}
+.cityInput::placeholder {
+    color: rgba(23, 50, 77, 0.7);
+}
+.search-Btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+#result {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+}
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.location-date-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.weather-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-summary-info {
+    text-align: end;
+}
+.fa-solid::after {
+    width: 32px;
+    height: 32px;
+}
+.weather-condition-container {
+    display: flex;
+    justify-content: space-between;
+}
+.condition-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.forecast-item-container {
+    display: flex;
+    gap: 14px;
+    overflow: scroll;
+    padding-bottom: 12px;
+}
+.forecast-item-container::-webkit-scrollbar {
+    height: 8px;
+}
+.forecast-item-container::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 80px;
+}
+.forecast-item-container::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 80px;
+}
+.forecast-item {
+    min-width: 68px;
+    background: rgb(255, 255, 255, 0.29);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: o.3s background;
+}
+.forecast-item:hover {
+    background: rgb(255, 255, 255, 0.55);
+}
+.fa-cloud-showers-water {
+    width: 45px;
+    height: 45px;
+}
+
+/*--Section-Message*/
+.section-message {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.section-message h4 {
+    margin-top: 8px;
+}
+
+.app-footer {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}

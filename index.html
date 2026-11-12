@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Design- RantiDev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="web icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <script src="https://kit.fontawesome.com/bbe78efb18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input class="cityInput" id="cityInput" type="text" placeholder="Search City">
+            <button class="search-Btn" id="searchBtn">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+            </button>
+            <div id="result"></div>
+        </header>
+
+        <section class="weather-info" style="display: none">
+            <div class="location-date-container">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4 class="country-txt">Lagos</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt" >Tues, 20 Oct</h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <i class="fa-solid fa-cloud-sun fa-4x" style="color: rgb(255, 212, 59);"></i>
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29°C</h1>
+                    <h3 class="condition-txt" regular-txt>Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-condition-container">
+                <div class="condition-item">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="condition-item">
+                    <h5 class="regular-txt">Humidity</h5>
+                    <h5 class="humidity-value-txt">55%</h5>
+                </div>
+
+                <div class="condition-item">
+                    <i class="fa-solid fa-wind" style="color: rgb(255, 212, 59);"></i>
+                </div>
+                <div class="condition-item">
+                    <h5 class="regular-txt">Wind Speed</h5>
+                    <h5 class="wind-value-txt">2 m/s</h5>
+                </div>
+            </div>
+
+            <div class="forecast-item-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date" regular-txt>20, Oct</h5>
+                    <i class="fa-solid fa-cloud-showers-water fa-3x" style="color: rgb(255, 212, 59);"></i>
+                    <h5 class="forecast-item-temperature">29°C</h5>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="search-city section-message">
+            <img src="" class="message-img">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the Weather Condition of any City
+                </h4>
+            </div>
+        </section>
+
+        <footer class="app-footer">
+            <img class="app-logo" src="web icon.jpg" alt="RantiDev logo">
+            <span>Powered by RantiDev</span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
